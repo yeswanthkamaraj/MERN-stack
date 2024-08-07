@@ -7,18 +7,20 @@
 </head>
 <body>
    
-   <input id="box1" value="4">
-   <input id="box2" value="4">
+   <input id="box1">
+   <input id="box2">
    <button onclick="resultfun()">add</button>
    <p id="result">result</p>
     <script>
         var b1=document.getElementById("box1")
         var b2=document.getElementById("box2")
         var res=document.getElementById("result")
+        
+    
+        function resultfun(){
         var b1val=Number(b1.value)
         var b2val=Number(b2.value)
         var tot=b1val+b2val;
-        function resultfun(){
             res.textContent=tot;
         }
 
