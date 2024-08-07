@@ -7,20 +7,21 @@
 </head>
 <body>
    
-    <button onclick="add()">++</button>
-    <p id="val">0</p>
-    <button onclick="sub()">--</button>
+   <input id="box1" value="4">
+   <input id="box2" value="4">
+   <button onclick="resultfun()">add</button>
+   <p id="result">result</p>
     <script>
-        var h=document.getElementById("val");
-        var v=Number(h.value)
-        function add(){
-           v=v+1;
-           console.log(v);
+        var b1=document.getElementById("box1")
+        var b2=document.getElementById("box2")
+        var res=document.getElementById("result")
+        var b1val=Number(b1.value)
+        var b2val=Number(b2.value)
+        var tot=b1val+b2val;
+        function resultfun(){
+            res.textContent=tot;
         }
-        function sub(){
-           v=v-1;
-           console.log(v);
-        }
+
     </script>
 </body>
 </html>
