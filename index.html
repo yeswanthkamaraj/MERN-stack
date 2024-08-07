@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
-    <h1 id="h1">Hello world</h1>
-    <button onclick="change()">change</button>
+   
+    <button onclick="add()">++</button>
+    <p id="val">0</p>
+    <button onclick="sub()">--</button>
     <script>
-        var h=document.getElementById("h1");
-        function change(){
-            h.textContent="bye world"
+        var h=document.getElementById("val");
+        var v=Number(h.value)
+        function add(){
+           v=v+1;
+           console.log(v);
         }
-     
+        function sub(){
+           v=v-1;
+           console.log(v);
+        }
     </script>
 </body>
 </html>
