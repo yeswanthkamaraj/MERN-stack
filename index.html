@@ -23,12 +23,12 @@
         if(randnum==enternum){
             console.log("right")
             res.textContent="Right"
-            ans.textContent=score;
+            //ans.textContent=score;
 
         }
         else{
             score=score-1
-            console.log("Wrong")
+            ans.textContent="score"+score
             res.textContent="wrong"
         }
     }
