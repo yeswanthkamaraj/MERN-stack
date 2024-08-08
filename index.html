@@ -1,36 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-<h1>Guess the number</h1>
-<input id="gessnum">
-<button onclick="check()">check</button>
-<p id="result">You are right/wrong</p>
-<p id="scroee">scroe:10</p>
-</body>
+<style>
+    div{
+        background-color: black;
+        width: 100px;
+        height: 100px;
+    }
+</style>
+<div id="box"></div>
+<button onclick="change()">change color</button>
 <script>
-    var gsnum=document.getElementById("gessnum")
-    var res=document.getElementById("result")
-    var ans=document.getElementById("scroee")
-    var randnum=Math.floor(Math.random()*10)+1
-    var score=10;
-    function check(){
-        var enternum=gsnum.value 
-        if(randnum==enternum){
-            console.log("right")
-            res.textContent="Right"
-            //ans.textContent=score;
-
-        }
-        else{
-            score=score-1
-            ans.textContent="score"+score
-            res.textContent="wrong"
-        }
+    var box=document.getElementById("box")
+    function change(){
+        box.style.backgroundColor="red"
     }
 </script>
-</html>
