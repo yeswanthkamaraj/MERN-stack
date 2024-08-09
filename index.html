@@ -6,16 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Task-2 DOM manipulation</h1>
-    <button onclick="add()">add</button>
-    <div id="result"></div>
+    <h1>Task-3 DOM manipulation</h1>
+    <button id ="btn" onclick="changecolor()">changecolor</button>
     
 </body>
 <script>
-function add(){
-    var l1=document.createElement("h1")
-    l1.textContent="Hello"
-    document.getElementById("result").append(l1);    
+function changecolor(){
+  document.getElementById("btn").style.backgroundColor="red"
 }
 </script>
 </html>
