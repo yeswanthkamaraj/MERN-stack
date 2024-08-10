@@ -8,20 +8,14 @@
 <body>
     <h1>Task-4 DOM manipulation</h1>
     <h1 id="text1">Name</h1>
-    <button id="btn1" onclick="change1()">John</button>
-    <button id="btn2" onclick="change2()">Hari</button>
-    <button id="btn3" onclick="change3()">Praveen</button>
+    <button id="btn1" onclick="change(event)">John</button>
+    <button id="btn2" onclick="change(event)">Hari</button>
+    <button id="btn3" onclick="change(event)">Praveen</button>
     
 </body>
 <script>
- function change1(){
-    document.getElementById("text1").innerHTML="John";
+ function change(){
+    document.getElementById("text1").textContent=event.target.textContent;
  }
- function change2(){
-  document.getElementById("text1").innerHTML="Hari";
-}
-function change3(){
-  document.getElementById("text1").innerHTML="Praveen";
-}
 </script>
 </html>
