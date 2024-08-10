@@ -6,13 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Task-3 DOM manipulation</h1>
-    <button id ="btn" onclick="changecolor()">changecolor</button>
+    <h1>Task-4 DOM manipulation</h1>
+    <h1 id="text1">Name</h1>
+    <button id="btn1" onclick="change1()">John</button>
+    <button id="btn2" onclick="change2()">Hari</button>
+    <button id="btn3" onclick="change3()">Praveen</button>
     
 </body>
 <script>
-function changecolor(){
-  document.getElementById("btn").style.backgroundColor="red"
+ function change1(){
+    document.getElementById("text1").innerHTML="John";
+ }
+ function change2(){
+  document.getElementById("text1").innerHTML="Hari";
+}
+function change3(){
+  document.getElementById("text1").innerHTML="Praveen";
 }
 </script>
 </html>
