@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To do List</title>
+    
+    <script type="text/javascript" src="./Todo.js"></script>
 </head>
 <body>
-    <div>
-        <h1>praveen</h1>
-        <h1>John</h1>
-    </div>
+  
+    <input>
+    <button onclick="add()">Add</button>
+    <ul id="list-container">
+        <li>Hello
+            <button>DELETE</button>
+        </li>
+    </ul>
 </body>
-<script>
-    var div=document.querySelector("div")
-    var h1=document.createElement("h1")
-    h1.textContent="Hello"
-    div.insertAdjacentElement("beforebegin",h1)
-</script>
 </html>
