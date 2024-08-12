@@ -1,9 +1,11 @@
 input{
     border-radius: 5px;
-    height: 50px;
+    height: 43px;
     width: 350px;
 }
 button{
+    color: aliceblue;
+    background-color: black;
     border-radius: 5px;
     box-sizing: 10px;
     height: 50px;
