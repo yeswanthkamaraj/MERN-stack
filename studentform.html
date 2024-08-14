@@ -4,43 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./studentform.css">
     <script src="./studentform.js"></script>
+    <link rel="stylesheet" href="./studentform.css">
 </head>
-<style>
-    div{
-        align-items: center;
-        padding: 2px;
-        border-color: black;
-        border-width: 100px;
-    }
-</style>
 <body>
-    <div>
-        <form>
-            <label for="Name">Name</label>
-            <input type="text">
-            <br>
-            <br>
-            <label for="Name">Age</label>
-            <input type="number">
-            <br>
-            <br>
-            <label for="Name">Gender</label>
-            <input type="text">
-            <br>
-            <br>
-            <label for="Name">Course</label>
-            <input type="text">
-            <br>
-            <br>
-            <label for="Name">Email</label>
-            <input type="text">
-            <br>
-            <br>
-            <button id="btn" style="">Save</button>
-          </form>
-    </div>
-
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onformSubmit()">
+                    <div>
+                    <label for="">Full Name</label>
+                    <input type="text" name="fullName">
+                    </div>
+                    <div>
+                    <label for="">EMP Code</label>
+                    <input type="text" name="fullName">
+                    </div>
+                    <div>
+                    <label for="">Salary</label>
+                    <input type="text" name="fullName">
+                    </div>
+                    <div>
+                    <label for="">City</label>
+                    <input type="text" name="fullName">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+            <table class="list"id="employeelist">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>EMP Code</th>
+                        <th>Salary</th>
+                        <th>City</th>
+                    </tr>
+                </thead>
+               </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
