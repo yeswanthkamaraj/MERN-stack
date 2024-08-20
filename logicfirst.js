@@ -1,3 +1,5 @@
+
+function btnnn(){
 const btn = document.getElementById("btn")
 const colortext = document.getElementById("color")
 const wrap =  document.getElementById("wrap")
@@ -15,4 +17,5 @@ btn.addEventListener('click',function(){
 function randHexValue(){
    let randomIndex = Math.floor(Math.random()*16)
    return hex[randomIndex]
+ }
 }
